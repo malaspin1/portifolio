@@ -1,7 +1,7 @@
 /* Importação de fonte */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Variáveis */
+
 :root {
     --cor1: #0D0D0D;
     --cor2: #152026;
@@ -14,20 +14,18 @@
     --fontetexto: "Montserrat", sans-serif;
 }
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Estilos compartilhados */
 header {
     background-color: var(--cor1);
     color: white;
     padding: 20px;
     font-family: var(--fontetexto);
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 10;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.61);
 }
@@ -134,7 +132,19 @@ header {
     text-indent: 10px;
 }
 
-/* Estilos para telas maiores */
+@media (min-width: 100px) {
+    header {
+        display: block;
+    }
+
+    #bemvindo {
+        background-position: center;
+    }
+
+    #links {
+        margin: 10px;
+    }
+}
 @media (min-width: 700px) {
     header {
         display: flex;
@@ -145,22 +155,4 @@ header {
     #texto>h1 {
         display: inline;
     }
-}
-
-/* Estilos para telas menores */
-@media (max-width: 700px) {
-    header {
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    #bemvindo {
-        background-position: center;
-    }
-
-    #links {
-        margin: 10px;
-    }
-
 }
