@@ -7,7 +7,7 @@
     --cor2: #152026;
     --cor3: #253840;
     --cor4: #516973;
-    --cor5: #92A4A6;
+    --cor5: #dddddd;
     --cor6: #202020;
     --cor-branco-fundo: #FAFAFA;
     --cortexto: #e2e2e2;
@@ -70,6 +70,44 @@ header {
     font-size: 2.8em;
 }
 
+.msg {
+    display: block;
+    border-right: 5px solid white;
+    animation: mark .7s step-end infinite, write 10s steps(22, end) infinite;
+    overflow: hidden;
+    margin: auto;
+    white-space: nowrap;
+}
+
+@keyframes mark {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes write {
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 50%;
+    }
+
+    85% {
+        width: 50%;
+    }
+
+    95% {
+        width: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+
 #sobremim {
     background-color: var(--cor6);
     color: white;
@@ -108,13 +146,13 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+
 }
 
 .habilidade {
     background-color: var(--cor5);
     border: 4px solid var(--cor1);
     width: 250px;
-    height: 380px;
     text-align: center;
     border-radius: 20px;
     color: var(--cor1);
@@ -130,6 +168,7 @@ header {
     margin: 10px 15px;
     text-align: justify;
     text-indent: 10px;
+    color: var(--cor1);
 }
 
 @media (min-width: 100px) {
@@ -145,6 +184,7 @@ header {
         margin: 10px;
     }
 }
+
 @media (min-width: 700px) {
     header {
         display: flex;
@@ -155,4 +195,91 @@ header {
     #texto>h1 {
         display: inline;
     }
+}
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    font-family: var(--fontetexto);
+    padding: 15px;
+}
+
+footer a,
+footer p {
+    font-weight: 400;
+    display: inline;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+footer img {
+    filter: invert(1);
+    width: 24px;
+    transform: translateY(16%);
+}
+
+#projetos {
+    background-image: url(img/fundo1.jpg);
+    width: 100%;
+}
+
+#projetoscont {
+    padding: 20px;
+    max-width: 1260px;
+    margin: auto;
+    background-color: #0d0d0d57;
+    color: white;
+    font-family: var(--fontetexto);
+    text-align: center;
+}
+
+#projetoscont h2 {
+    font-size: 3em;
+    border-bottom: 3px solid white;
+    margin: 0 -20px 0 -20px;
+}
+
+#projcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.projeto {
+    width: 500px;
+    background-color: rgb(211, 211, 211);
+    color: black;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.808);
+    margin-top: 30px;
+}
+
+.projeto h3 {
+    font-size: 2em;
+}
+.projeto iframe {
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+}
+.projeto p {
+    text-align: justify;
+    width: 400px;
+    margin: 20px auto 10px auto;
+}
+
+.projeto a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.projeto a:hover {
+    font-weight: 700;
+    border-bottom: 3px solid black;
 }
