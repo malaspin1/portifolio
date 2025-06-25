@@ -73,7 +73,7 @@ header {
 .msg {
     display: block;
     border-right: 5px solid white;
-    animation: mark .7s step-end infinite, write 10s steps(22, end) infinite;
+    animation: mark .7s step-end infinite, write 8s steps(22, end) infinite;
     overflow: hidden;
     margin: auto;
     white-space: nowrap;
@@ -114,12 +114,14 @@ header {
     color: white;
     font-family: var(--fontetexto);
     padding: 10px;
+    box-shadow: 1px 5px 10px#0d0d0d7a;
 }
 
 #sobrecont {
     max-width: 1300px;
     margin: auto;
     padding: 50px 0;
+
 }
 
 #sobrecont>h2,
@@ -198,18 +200,18 @@ header {
     }
 }
 
-
-
 #projetos {
-    background-image: url(img/fundo1.jpg);
+    background-image: url(img/fundo2.jpg);
+    background-position: left center;
+    background-size: cover;
     width: 100%;
+        box-shadow: 1px 5px 10px#0d0d0d7a;
 }
 
 #projetoscont {
     padding: 20px;
     max-width: 1260px;
     margin: auto;
-    background-color: #0d0d0d57;
     color: white;
     font-family: var(--fontetexto);
     text-align: center;
