@@ -30,6 +30,13 @@ header {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.61);
 }
 
+#div2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #links>a {
     color: white;
     text-decoration: none;
@@ -40,6 +47,62 @@ header {
 
 #links>a:hover {
     text-decoration: underline;
+}
+
+#lenguage {
+    display: inline;
+
+}
+
+#lenguage a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+#lenguage img {
+    width: 16px;
+    transform: translatey(16%);
+
+}
+
+#globo {
+    filter: invert(1);
+}
+
+#lenguage a:hover {
+    background-color: white;
+    color: black;
+    outline: 2px solid white;
+    border: 2px solid var(--cor1);
+}
+
+#lenguage a:hover #globo {
+    filter: invert(0);
+}
+
+#containeridiomas {
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 120px;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    background-color: var(--cor1);
+}
+
+
+#containeridiomas>a {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+.escondido {
+    display: none;
 }
 
 #bemvindo {
@@ -205,7 +268,7 @@ header {
     background-position: left center;
     background-size: cover;
     width: 100%;
-        box-shadow: 1px 5px 10px#0d0d0d7a;
+    box-shadow: 1px 5px 10px#0d0d0d7a;
 }
 
 #projetoscont {

@@ -16,11 +16,21 @@
         <div id="nome">
             <h1>Vitor Malaspini</h1>
         </div>
-        <div id="links">
-            <a href="#bemvindo">Inicio</a>
-            <a href="#sobremim">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
+        <div id="div2">
+            <div id="links">
+                <a href="#bemvindo">Inicio</a>
+                <a href="#sobremim">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div id="lenguage"><a onclick="idioma(event)" href="#">
+                    <img id="globo" src="img/globe-americas.svg" alt="Idioma"> Idioma - Br
+                </a>
+                <div id="containeridiomas" class="escondido">
+                    <a href="en.html"><img src="img/Flag_of_the_United_States.svg" alt="Idioma"> En - Us </a>
+                    <a href="" onclick="idioma(event)"><img src="img/Flag_of_Brazil.jpg" alt="Idioma"> Pt - Br </a>
+                </div>
+            </div>
         </div>
     </header>
     <section id="bemvindo">
@@ -94,11 +104,9 @@
     </section><!--Projetos-->
     <footer>
         <h3 id="contato">Contato</h3>
-        <a href="https://wa.me/5516994612811" target="_blank"><img src="img/whatsapp.svg" alt="Logo Whatsapp"> (16)
-            99461-2811</a>
-        <br>
         <p><img src="img/envelope.svg"> vitormalaspini@outlook.com</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
