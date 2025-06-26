@@ -105,6 +105,19 @@ header {
     display: none;
 }
 
+@media (max-width:600px) {
+    #div2 {
+        display: block;
+    }
+
+    #links>a {
+        width: 40%;
+        text-align: left;
+        display: inline-block;
+        margin: 10px 0 10px 0;
+    }
+}
+
 #bemvindo {
     background-image: url(img/tela_fundo.jpg);
     background-size: cover;
