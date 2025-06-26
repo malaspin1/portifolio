@@ -116,6 +116,26 @@ header {
         display: inline-block;
         margin: 10px 0 10px 0;
     }
+
+    @media (max-width: 700px) {
+        #lenguage {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #lenguage a {
+            display: inline-block;
+            margin: 10px 5px;
+        }
+
+        #lenguage img {
+            display: inline;
+            width: 16px;
+            height: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
 
 #bemvindo {
